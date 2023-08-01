@@ -8,11 +8,11 @@ namespace GitHubTestApp
 {
     internal class Program : Logic 
     {
-        public static void sumElem(int a, int b)
+        public static void sumElem(int a, int b, int c)
         {
-            int c = a + b;
+            int d = a + b;
 
-            Console.WriteLine(c);
+            Console.WriteLine(d);
         }
 
         static void Main(string[] args)
@@ -21,7 +21,7 @@ namespace GitHubTestApp
 
             Console.WriteLine($"{a} * {a} = {a * a}");
 
-            sumElem(3, 1);
+            sumElem(3, 1, 3);
 
             Logic appLogic = new Logic();
             appLogic.sqrtElem(3);
