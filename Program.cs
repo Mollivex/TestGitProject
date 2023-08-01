@@ -21,8 +21,6 @@ namespace GitHubTestApp
 
             Console.WriteLine($"{a} * {a} = {a * a}");
 
-            Console.WriteLine("Hello World!");
-
             Program elem = new Program();
             elem.sumElem(2, 3);
 
