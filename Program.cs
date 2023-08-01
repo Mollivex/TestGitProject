@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace GitHubTestApp
 {
-    internal class Program
+    internal class Program : Logic 
     {
         public void sumElem(int a, int b)
         {
             int c = a + b;
 
             Console.WriteLine(c);
-            
         }
+
         static void Main(string[] args)
         {
             int a = int.Parse(Console.ReadLine());
@@ -24,9 +24,10 @@ namespace GitHubTestApp
             Console.WriteLine("Hello World!");
 
             Program elem = new Program();
-
             elem.sumElem(2, 3);
 
+            Logic appLogic = new Logic();
+            appLogic.sqrtElem(3);
         }
     }
 }
