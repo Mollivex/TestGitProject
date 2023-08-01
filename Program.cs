@@ -26,9 +26,6 @@ namespace GitHubTestApp
             Logic appLogic = new Logic();
             appLogic.sqrtElem(3);
 
-            Console.WriteLine("'World Hello' App");
-
-            Console.WriteLine("Hello world!");
         }
     }
 }
