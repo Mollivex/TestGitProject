@@ -13,6 +13,8 @@ namespace GitHubTestApp
             int a = int.Parse(Console.ReadLine());
 
             Console.WriteLine($"{a} * {a} = {a * a}");
+
+            Console.WriteLine("Hello World!");
         }
     }
 }
