@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace GitHubTestApp
 {
+    class Logic
+    {
+        public void ShowHelloWorld()
+        {
+            Console.WriteLine("Hello World");
     public class Logic
     {
         /// <summary>
