@@ -23,7 +23,9 @@ namespace GitHubTestApp
 
         static void Main(string[] args)
         {
-            Console.Write("Enter your number: ");
+            Console.WriteLine("This is a clone of project from GitHub repository!!");
+
+            Console.Write("\nEnter your number: ");
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine($"{a} * {a} = {a * a}");
 
@@ -32,7 +34,6 @@ namespace GitHubTestApp
 
             Console.Write("\nsqrtElem method result: ");
             sqrtElem(3);
-
         }
     }
 }
