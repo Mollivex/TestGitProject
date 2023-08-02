@@ -1,0 +1,52 @@
+[33mcommit dadab9fd0a171d7350d307d005898220a8d73f2f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Alex <licoms1997@gmail.com>
+Date:   Tue Aug 1 21:34:04 2023 +0300
+
+    Add Logic class. Inherit Logic class to Program class
+
+[1mdiff --git a/GitHubTestApp.csproj b/GitHubTestApp.csproj[m
+[1mindex ee0651c..1769d89 100644[m
+[1m--- a/GitHubTestApp.csproj[m
+[1m+++ b/GitHubTestApp.csproj[m
+[36m@@ -43,6 +43,7 @@[m
+     <Reference Include="System.Xml" />[m
+   </ItemGroup>[m
+   <ItemGroup>[m
+[32m+[m[32m    <Compile Include="Logic.cs" />[m
+     <Compile Include="Program.cs" />[m
+     <Compile Include="Properties\AssemblyInfo.cs" />[m
+   </ItemGroup>[m
+[1mdiff --git a/Program.cs b/Program.cs[m
+[1mindex e1941ad..81a74ab 100644[m
+[1m--- a/Program.cs[m
+[1m+++ b/Program.cs[m
+[36m@@ -6,15 +6,15 @@[m [musing System.Threading.Tasks;[m
+ [m
+ namespace GitHubTestApp[m
+ {[m
+[31m-    internal class Program[m
+[32m+[m[32m    internal class Program : Logic[m[41m [m
+     {[m
+         public void sumElem(int a, int b)[m
+         {[m
+             int c = a + b;[m
+ [m
+             Console.WriteLine(c);[m
+[31m-            [m
+         }[m
+[32m+[m
+         static void Main(string[] args)[m
+         {[m
+             int a = int.Parse(Console.ReadLine());[m
+[36m@@ -24,9 +24,10 @@[m [mnamespace GitHubTestApp[m
+             Console.WriteLine("Hello World!");[m
+ [m
+             Program elem = new Program();[m
+[31m-[m
+             elem.sumElem(2, 3);[m
+ [m
+[32m+[m[32m            Logic appLogic = new Logic();[m
+[32m+[m[32m            appLogic.sqrtElem(3);[m
+         }[m
+     }[m
+ }[m

@@ -6,19 +6,28 @@ using System.Threading.Tasks;
 
 namespace GitHubTestApp
 {
-    internal class Program : Logic 
+    class Program : Logic 
     {
         public static void sumElem(int a, int b)
+        /// <summary>
+        /// Sum three elements (a,b,c)
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        public static void sumElem(int a, int b, int c)
         {
-            int c = a + b;
+            int d = a + b + 1;
 
-            Console.WriteLine(c);
+            Console.WriteLine(d);
         }
 
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("This is a clone of project from GitHub repository!!");
 
+            Console.Write("\nEnter your number: ");
+            int a = int.Parse(Console.ReadLine());
             Console.WriteLine($"{a} * {a} = {a * a}");
 
             sumElem(2, 3);
@@ -26,6 +35,11 @@ namespace GitHubTestApp
             Console.WriteLine("'World Hello' App");
 
             Console.WriteLine("NewBranch1 branch");
+            Console.Write("\nsumElem method result: ");
+            sumElem(3, 1, 3);
+
+            Console.Write("\nsqrtElem method result: ");
+            sqrtElem(3);
         }
     }
 }
