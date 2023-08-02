@@ -24,6 +24,8 @@ namespace GitHubTestApp
             sumElem(2, 3);
 
             Console.WriteLine("'World Hello' App");
+
+            Console.WriteLine("NewBranch1 branch");
         }
     }
 }
