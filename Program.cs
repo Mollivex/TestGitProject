@@ -23,14 +23,15 @@ namespace GitHubTestApp
 
         static void Main(string[] args)
         {
+            Console.Write("Enter your number: ");
             int a = int.Parse(Console.ReadLine());
-
             Console.WriteLine($"{a} * {a} = {a * a}");
 
+            Console.Write("\nsumElem method result: ");
             sumElem(3, 1, 3);
 
-            Logic appLogic = new Logic();
-            appLogic.sqrtElem(3);
+            Console.Write("\nsqrtElem method result: ");
+            sqrtElem(3);
 
         }
     }

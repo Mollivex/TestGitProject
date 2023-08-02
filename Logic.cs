@@ -12,7 +12,7 @@ namespace GitHubTestApp
         /// Square number of element 'a'
         /// </summary>
         /// <param name="a"></param>
-        public void sqrtElem(int a)
+        public static void sqrtElem(int a)
         {
             int result = a * a;
 
@@ -25,7 +25,7 @@ namespace GitHubTestApp
         /// <param name="a"></param>
         /// <param name="p"></param>
         /// <returns></returns>
-        public int sqrtElem(int a, int p)
+        public static int sqrtElem(int a, int p)
         {
             return (int)Math.Pow(a, p);
         }
