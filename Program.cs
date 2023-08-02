@@ -16,7 +16,7 @@ namespace GitHubTestApp
         /// <param name="c"></param>
         public static void sumElem(int a, int b, int c)
         {
-            int d = a + b;
+            int d = a + b + 1;
 
             Console.WriteLine(d);
         }
