@@ -29,5 +29,10 @@ namespace GitHubTestApp
         {
             return (int)Math.Pow(a, p);
         }
+
+        public static int sqrtElem(int a, int p, int b = 1)
+        {
+            return (int)Math.Sqrt(a + p + b);
+        }
     }
 }
