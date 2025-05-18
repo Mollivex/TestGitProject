@@ -8,6 +8,7 @@ namespace GitHubTestApp
 {
     class Program : Logic 
     {
+        public static void sumElem(int a, int b)
         /// <summary>
         /// Sum three elements (a,b,c)
         /// </summary>
@@ -29,6 +30,11 @@ namespace GitHubTestApp
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine($"{a} * {a} = {a * a}");
 
+            sumElem(2, 3);
+
+            Console.WriteLine("'World Hello' App");
+
+            Console.WriteLine("NewBranch1 branch");
             Console.Write("\nsumElem method result: ");
             sumElem(3, 1, 3);
 
